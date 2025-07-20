@@ -1,0 +1,1346 @@
+{
+	"info": {
+		"_postman_id": "7cd15264-f6f5-4350-ba04-498a32a87fdf",
+		"name": "E-Shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44131878",
+		"_collection_link": "https://ziad2019-3079108.postman.co/workspace/ziad2019's-Workspace~267ecff1-0309-4a80-8467-4b57bc3a9b43/collection/44131878-7cd15264-f6f5-4350-ba04-498a32a87fdf?action=share&source=collection_link&creator=44131878"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "categories",
+					"item": [
+						{
+							"name": "createGategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyMGU2NzY5OWJmNTYyYjE1YTIwYzUiLCJlbWFpbCI6InppYWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUxMzA2MjY3LCJleHAiOjE3NTkwODIyNjd9.A6uffP3zJLCrdhONw7P9RgdbPQYU6Rzbi-KTcUvEXTs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"nnnnnnnn\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCategories",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCategory",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories/6864806f6a91f5592e04f00b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										"6864806f6a91f5592e04f00b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateCategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyMGU2NzY5OWJmNTYyYjE1YTIwYzUiLCJlbWFpbCI6InppYWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUxMzA2MjY3LCJleHAiOjE3NTkwODIyNjd9.A6uffP3zJLCrdhONw7P9RgdbPQYU6Rzbi-KTcUvEXTs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"jfkjfjff\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories/6864806f6a91f5592e04f00b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										"6864806f6a91f5592e04f00b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteCategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyMGU2NzY5OWJmNTYyYjE1YTIwYzUiLCJlbWFpbCI6InppYWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUxMzA2MjY3LCJleHAiOjE3NTkwODIyNjd9.A6uffP3zJLCrdhONw7P9RgdbPQYU6Rzbi-KTcUvEXTs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories/6864806f6a91f5592e04f00b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										"6864806f6a91f5592e04f00b"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "brand",
+					"item": [
+						{
+							"name": "createGategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyMGU2NzY5OWJmNTYyYjE1YTIwYzUiLCJlbWFpbCI6InppYWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUxMzA2MjY3LCJleHAiOjE3NTkwODIyNjd9.A6uffP3zJLCrdhONw7P9RgdbPQYU6Rzbi-KTcUvEXTs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"nnnnnnnn\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCategories",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCategory",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories/6864806f6a91f5592e04f00b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										"6864806f6a91f5592e04f00b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateCategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyMGU2NzY5OWJmNTYyYjE1YTIwYzUiLCJlbWFpbCI6InppYWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUxMzA2MjY3LCJleHAiOjE3NTkwODIyNjd9.A6uffP3zJLCrdhONw7P9RgdbPQYU6Rzbi-KTcUvEXTs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"jfkjfjff\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories/6864806f6a91f5592e04f00b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										"6864806f6a91f5592e04f00b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteCategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyMGU2NzY5OWJmNTYyYjE1YTIwYzUiLCJlbWFpbCI6InppYWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUxMzA2MjY3LCJleHAiOjE3NTkwODIyNjd9.A6uffP3zJLCrdhONw7P9RgdbPQYU6Rzbi-KTcUvEXTs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories/6864806f6a91f5592e04f00b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										"6864806f6a91f5592e04f00b"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "coupon",
+					"item": [
+						{
+							"name": "createGategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyMGU2NzY5OWJmNTYyYjE1YTIwYzUiLCJlbWFpbCI6InppYWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUxMzA2MjY3LCJleHAiOjE3NTkwODIyNjd9.A6uffP3zJLCrdhONw7P9RgdbPQYU6Rzbi-KTcUvEXTs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"nnnnnnnn\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCategories",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCategory",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories/6864806f6a91f5592e04f00b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										"6864806f6a91f5592e04f00b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateCategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyMGU2NzY5OWJmNTYyYjE1YTIwYzUiLCJlbWFpbCI6InppYWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUxMzA2MjY3LCJleHAiOjE3NTkwODIyNjd9.A6uffP3zJLCrdhONw7P9RgdbPQYU6Rzbi-KTcUvEXTs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"jfkjfjff\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories/6864806f6a91f5592e04f00b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										"6864806f6a91f5592e04f00b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteCategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyMGU2NzY5OWJmNTYyYjE1YTIwYzUiLCJlbWFpbCI6InppYWRAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzUxMzA2MjY3LCJleHAiOjE3NTkwODIyNjd9.A6uffP3zJLCrdhONw7P9RgdbPQYU6Rzbi-KTcUvEXTs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/categories/6864806f6a91f5592e04f00b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										"6864806f6a91f5592e04f00b"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "subCategories",
+					"item": [
+						{
+							"name": "createSubCategory",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"serty\",\r\n    \"category\":\"6806ee2facc4e8d2f1250909\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/subCategories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"subCategories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getSubCategories",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/subcategories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"subcategories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getSubCategory",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/subCategories/68162d538086f60a82faedc1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"subCategories",
+										"68162d538086f60a82faedc1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateSubCategory",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"samsaong...........\",\r\n    \"category\":\"68163464f93a8e1e852df9df\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/subCategories/68163464f93a8e1e852df9df",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"subCategories",
+										"68163464f93a8e1e852df9df"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteSubCategory",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/subCategories/68167270469e5e6fcb65295f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"subCategories",
+										"68167270469e5e6fcb65295f"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "product",
+					"item": [
+						{
+							"name": "createproduct",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Mens Casual Premium Slim Fit T-Shirts\",\r\n    \"slug\": \"mens-casual-premium-slim-fit-t-shirts\",\r\n    \"quantity\": 20,\r\n    \"sold\": 30,\r\n    \"price\": 22.3,\r\n    \"priceAfterDiscount\": 20,\r\n    \"description\": \"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.\",\r\n    \"category\": \"6806ee2facc4e8d2f1250909\",\r\n    \"imageCover\": \"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg\",\r\n    \"ratingsAverage\": 4.4,\r\n    \"ratingsQuantity\": 23\r\n  }\r\n  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getProduct",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateProduct",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"_id\": \"6817d507f09f20b7228fa56c\",\r\n        \"title\": \"Fjallraven - Foldsack No. 1 Backpack, Fits 15 phons\",\r\n        \"slug\": \"fjallraven-foldsack-no.-1-backpack-fits-15-laptops\",\r\n        \"description\": \"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday\",\r\n        \"quantity\": 10,\r\n        \"sold\": 25,\r\n        \"price\": 109.95,\r\n        \"priceAfterDiscount\": 100,\r\n        \"imageCover\": \"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg\",\r\n        \"category\": \"6806ee2facc4e8d2f1250909\",\r\n        \"ratingsAverage\": 4.3,\r\n        \"ratingsQuantity\": 20\r\n        \r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProduct",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "review",
+					"item": [
+						{
+							"name": "createreview",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Mens Casual Premium Slim Fit T-Shirts\",\r\n    \"slug\": \"mens-casual-premium-slim-fit-t-shirts\",\r\n    \"quantity\": 20,\r\n    \"sold\": 30,\r\n    \"price\": 22.3,\r\n    \"priceAfterDiscount\": 20,\r\n    \"description\": \"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.\",\r\n    \"category\": \"6806ee2facc4e8d2f1250909\",\r\n    \"imageCover\": \"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg\",\r\n    \"ratingsAverage\": 4.4,\r\n    \"ratingsQuantity\": 23\r\n  }\r\n  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getReview",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateReview",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"_id\": \"6817d507f09f20b7228fa56c\",\r\n        \"title\": \"Fjallraven - Foldsack No. 1 Backpack, Fits 15 phons\",\r\n        \"slug\": \"fjallraven-foldsack-no.-1-backpack-fits-15-laptops\",\r\n        \"description\": \"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday\",\r\n        \"quantity\": 10,\r\n        \"sold\": 25,\r\n        \"price\": 109.95,\r\n        \"priceAfterDiscount\": 100,\r\n        \"imageCover\": \"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg\",\r\n        \"category\": \"6806ee2facc4e8d2f1250909\",\r\n        \"ratingsAverage\": 4.3,\r\n        \"ratingsQuantity\": 20\r\n        \r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteReview",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "cart",
+					"item": [
+						{
+							"name": "createCart",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Mens Casual Premium Slim Fit T-Shirts\",\r\n    \"slug\": \"mens-casual-premium-slim-fit-t-shirts\",\r\n    \"quantity\": 20,\r\n    \"sold\": 30,\r\n    \"price\": 22.3,\r\n    \"priceAfterDiscount\": 20,\r\n    \"description\": \"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.\",\r\n    \"category\": \"6806ee2facc4e8d2f1250909\",\r\n    \"imageCover\": \"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg\",\r\n    \"ratingsAverage\": 4.4,\r\n    \"ratingsQuantity\": 23\r\n  }\r\n  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getReview",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateReview",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"_id\": \"6817d507f09f20b7228fa56c\",\r\n        \"title\": \"Fjallraven - Foldsack No. 1 Backpack, Fits 15 phons\",\r\n        \"slug\": \"fjallraven-foldsack-no.-1-backpack-fits-15-laptops\",\r\n        \"description\": \"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday\",\r\n        \"quantity\": 10,\r\n        \"sold\": 25,\r\n        \"price\": 109.95,\r\n        \"priceAfterDiscount\": 100,\r\n        \"imageCover\": \"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg\",\r\n        \"category\": \"6806ee2facc4e8d2f1250909\",\r\n        \"ratingsAverage\": 4.3,\r\n        \"ratingsQuantity\": 20\r\n        \r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteReview",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "applyCoupon",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "User Me",
+							"item": [
+								{
+									"name": "getMe",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "updateMe",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyZjAzYmMxZTE5YzMwZDExN2Y1NDQiLCJlbWFpbCI6ImVzbGFtQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzUxMzg2NDQ1LCJleHAiOjE3NTkxNjI0NDV9.m9cOP0o-DRuuWQXrCtz4mdiKc4HjK-2LXMVzcjDqW7s",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"nnnnnn\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/userMe",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"userMe"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteMe",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "createUser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Mens Casual Premium Slim Fit T-Shirts\",\r\n    \"slug\": \"mens-casual-premium-slim-fit-t-shirts\",\r\n    \"quantity\": 20,\r\n    \"sold\": 30,\r\n    \"price\": 22.3,\r\n    \"priceAfterDiscount\": 20,\r\n    \"description\": \"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.\",\r\n    \"category\": \"6806ee2facc4e8d2f1250909\",\r\n    \"imageCover\": \"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg\",\r\n    \"ratingsAverage\": 4.4,\r\n    \"ratingsQuantity\": 23\r\n  }\r\n  ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getUser",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateProduct",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"_id\": \"6817d507f09f20b7228fa56c\",\r\n        \"title\": \"Fjallraven - Foldsack No. 1 Backpack, Fits 15 phons\",\r\n        \"slug\": \"fjallraven-foldsack-no.-1-backpack-fits-15-laptops\",\r\n        \"description\": \"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday\",\r\n        \"quantity\": 10,\r\n        \"sold\": 25,\r\n        \"price\": 109.95,\r\n        \"priceAfterDiscount\": 100,\r\n        \"imageCover\": \"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg\",\r\n        \"category\": \"6806ee2facc4e8d2f1250909\",\r\n        \"ratingsAverage\": 4.3,\r\n        \"ratingsQuantity\": 20\r\n        \r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProduct",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/products/6817d507f09f20b7228fa56c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"6817d507f09f20b7228fa56c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getUers",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "authentication",
+					"item": [
+						{
+							"name": "signup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"mohamed\",\r\n    \"email\":\"mohamed@gmail.com\",\r\n    \"password\":\"mohamed123\",\r\n    \"passwordConfirm\":\"mohamed123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "forgetPasswort",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "orders",
+					"item": [
+						{
+							"name": "cash order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyZTI1ZTA3MjBmNTAxODkwNTVlOTkiLCJlbWFpbCI6Im1vaGFtZWRAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTE3NzcwNzcsImV4cCI6MTc1OTU1MzA3N30.PDN2Nf0wOa-6Ecol4HMj5OMLvLVoit6g_rKP2KbpoJ4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/orders/6868a2e83cae2c5775f0a8ad",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"6868a2e83cae2c5775f0a8ad"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get All Orders",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "get spicfic order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyZTI1ZTA3MjBmNTAxODkwNTVlOTkiLCJlbWFpbCI6Im1vaGFtZWRAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTE3NzcwNzcsImV4cCI6MTc1OTU1MzA3N30.PDN2Nf0wOa-6Ecol4HMj5OMLvLVoit6g_rKP2KbpoJ4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/orders/6862e25e0720f50189055e99",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"6862e25e0720f50189055e99"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update paid",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODYyZTI1ZTA3MjBmNTAxODkwNTVlOTkiLCJlbWFpbCI6Im1vaGFtZWRAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTE3NzcwNzcsImV4cCI6MTc1OTU1MzA3N30.PDN2Nf0wOa-6Ecol4HMj5OMLvLVoit6g_rKP2KbpoJ4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/orders/6876df701281b2e5749b7cfd/pay",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"6876df701281b2e5749b7cfd",
+										"pay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update deliverd",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "checkoutSession",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "upload-images",
+					"item": [
+						{
+							"name": "add image",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
